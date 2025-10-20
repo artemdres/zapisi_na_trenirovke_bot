@@ -1,7 +1,13 @@
 import telebot
 import json
 import datetime
-tokin="7282555430:AAE26KGN3lTPA7BeKpsNDf3xP-qKuCa9Yb8"
+import requests 
+
+tokin = "7282555430:AAE26KGN3lTPA7BeKpsNDf3xP-qKuCa9Yb8"
+
+requests.get(f"https://api.telegram.org/bot{tokin}/deleteWebhook")
+
+
 bot=telebot.TeleBot(tokin)
 
 
